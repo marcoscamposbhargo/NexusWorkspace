@@ -38,3 +38,10 @@ O projeto foi consolidado em arquivo único para facilitar a execução local e 
 NexusWorkspace/
 │
 └── app.py    # Contém rotas Flask, HTML, CSS e Lógica JS integradas
+
+
+Plaintext/
+├── app.py               # Código principal (Flask + Pywebview + SQLite)
+├── icone.ico            # Ícone do aplicativo
+├── nexus_workspace.db   # Banco de dados SQLite gerado automaticamente
+└── README.md            # Documentação do projeto
