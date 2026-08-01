@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Workspace - Full-Stack</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>🚀 Nexus Workspace</h1>
+            <p>Gerenciamento Dinâmico com Python, JS, HTML e CSS</p>
+        </header>
+        
+        <main class="main-content">
+            <!-- Formulário de Cadastro -->
+            <section class="card">
+                <h2>Adicionar Nova Tarefa</h2>
+                <form id="taskForm">
+                    <input type="text" id="taskTitle" placeholder="O que precisa ser feito?" required autocomplete="off">
+                    <select id="taskCategory">
+                        <option value="Finanças">Finanças</option>
+                        <option value="Gestão">Gestão</option>
+                        <option value="Desenvolvimento">Desenvolvimento</option>
+                    </select>
+                    <button type="submit" class="btn-primary">Adicionar</button>
+                </form>
+            </section>
+
+            <!-- Lista e Filtro -->
+            <section class="card">
+                <h2>Tarefas Ativas</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Filtrar tarefas por nome ou categoria...">
+                </div>
+                <ul id="taskList">
+                    <!-- Preenchido dinamicamente via JavaScript -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
